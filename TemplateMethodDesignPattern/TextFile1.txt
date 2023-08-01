@@ -1,0 +1,13 @@
+﻿Template Method tasarım deseni, bir algoritmanın yapısını tanımlayan ancak bu algoritmanın bazı adımlarını alt sınıflara bırakan bir davranışsal tasarım desenidir. 
+Bu desen, şablon olarak kullanılan bir ana sınıfı ve bu ana sınıfı kalıtan alt sınıfları içerir.
+
+Bu desen, bir algoritmanın temel yapısını belirler ve değişebilecek olan adımları alt sınıflara bırakarak farklı durumlarda davranış değişikliği sağlar. 
+Bu sayede algoritmanın tekrar kullanılabilirliğini artırır ve alt sınıfların belirli adımları farklı şekillerde uygulamasına olanak tanır.
+
+C# dilinde kompleks bir örnek yapalım. Diyelim ki bir kahve dükkanı uygulaması yazıyoruz
+ve müşteri siparişi alma süreci için bir Template Method tasarım deseni kullanmak istiyoruz.
+
+İlk olarak, temel bir "Kahve" sınıfı oluşturacağız, bu sınıf temel kahve yapma işlemini içerecek ve bazı adımları alt sınıflara bırakacaktır.
+Bu örnekte, Template Method tasarım deseni sayesinde "Kahve" sınıfı temel yapısıyla kalıtım alan "Espresso" ve "Latte" sınıflarında farklı kahve
+yapma işlemlerini ve gerekli malzemeleri ekleme adımlarını uygulamak için kullanılmıştır.
+Bu şekilde, yeni kahve türleri eklemek veya mevcut kahve yapım sürecini değiştirmek oldukça kolay olacaktır.
